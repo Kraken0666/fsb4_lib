@@ -1,5 +1,6 @@
 from dataclasses import dataclass
 
+
 @dataclass(frozen=True)
 class FSB4Header:
     magic: str
@@ -11,9 +12,10 @@ class FSB4Header:
     reserved: int
     bank_uuid: bytes
 
+
 @dataclass(frozen=True)
 class FSB4DirectoryEntry:
-    entry_len: int 
+    entry_len: int
     filename: str
     sample_len: int
     compressed_len: int
