@@ -12,7 +12,7 @@ from .fsb4_constants import (
 from .fsb4_helpers import format_time
 
 
-class FSB4Data:
+class FSB4Metadata:
     def __init__(self, filename: str):
         self.filename: str = filename
         self.header: FSB4Header | None = None

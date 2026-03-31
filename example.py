@@ -1,7 +1,7 @@
-from fsb4_lib import FSB4Data, decode_flags, format_time
+from fsb4_lib import FSB4Metadata, decode_flags, format_time
 
 # Load an FSB4 soundbank
-bank = FSB4Data("tests/a_fifth_of_beethoven.fsb")
+bank = FSB4Metadata("inputs/a_fifth_of_beethoven.fsb")
 
 # Extract header
 header = bank.get_header()
